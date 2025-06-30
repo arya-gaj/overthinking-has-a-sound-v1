@@ -19,7 +19,7 @@ try:
             return f"Agent executed tool '{tool_name}'. Result: {tool_result}"
             
         else:
-            return f"Agent: LLM suggested an unknown tool or no tool. LLM said: {llm_response}"
+            return f"Agent: LLM suggested an unknown tool or no tool at all. LLM said: {llm_response}"
             
     else:
         return f"Agent: {llm_response.strip()}"
